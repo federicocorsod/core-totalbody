@@ -190,8 +190,8 @@
         <span class="tag">−60%</span>
       </div>
       <p class="offer-note">Pagamento unico. Nessun abbonamento.</p>
-      <a class="cta" href="https://www.paypal.me/federicocorso/19.99EUR" target="_blank" rel="noopener">Paga con PayPal</a>
-      <p class="secure">Pagamento sicuro su paypal.me/federicocorso</p>
+      <a class="cta" href="https://buy.stripe.com/00w5kC1Aj55geYA4XX3ks00">Acquista ora</a>
+      <p class="secure">Pagamento sicuro con Stripe · Carta, Apple Pay, Google Pay</p>
     </div>
   </section>
 
@@ -224,29 +224,25 @@
     <ol class="steps">
       <li>
         <div>
-          <h3>Paga 19,99 € con PayPal</h3>
-          <p>Tocca «Paga con PayPal»: l'importo è già inserito.</p>
+          <h3>Tocca «Acquista ora»</h3>
+          <p>Si apre la pagina di pagamento sicura di Stripe, con i 19,99 € già inseriti.</p>
         </div>
       </li>
       <li>
         <div>
-          <h3>Scrivi la tua email nella nota</h3>
-          <p>Prima di confermare, aggiungi una nota al pagamento con l'indirizzo email dove vuoi ricevere la scheda. Puoi copiare questo testo e completarlo:</p>
-          <div class="copybox">
-            <code id="nota">Scheda Core&amp;Total Body – email: </code>
-            <button type="button" id="copia">Copia</button>
-          </div>
+          <h3>Inserisci i tuoi dati e paga</h3>
+          <p>Email, nome e cognome, indirizzo e codice fiscale: servono per inviarti la scheda e la fattura. Puoi pagare con carta, Apple Pay o Google Pay.</p>
         </div>
       </li>
       <li>
         <div>
           <h3>Ricevi la scheda via email</h3>
-          <p>La scheda ti arriva all'indirizzo che hai indicato.</p>
+          <p>La scheda ti arriva all'email che hai indicato.</p>
         </div>
       </li>
     </ol>
 
-    <p class="clause"><strong>Consegna entro 24 ore.</strong> La scheda viene inviata all'email indicata nella nota del pagamento entro 24 ore dalla ricezione. Se hai dimenticato di scrivere l'email, o non trovi il messaggio (controlla anche la cartella spam), scrivi in direct a <strong>@fede_corsius</strong> su Instagram.</p>
+    <p class="clause"><strong>Consegna entro 24 ore.</strong> La scheda viene inviata all'email indicata durante il pagamento entro 24 ore. Se non trovi il messaggio (controlla anche la cartella spam), scrivi in direct a <strong>@fede_corsius</strong> su Instagram.</p>
   </section>
 
   <section class="final">
@@ -254,7 +250,7 @@
       <span class="was">50,00 €</span>
       <span class="now">19,99<small>€</small></span>
     </div>
-    <a class="cta" href="https://www.paypal.me/federicocorso/19.99EUR" target="_blank" rel="noopener">Acquista la scheda</a>
+    <a class="cta" href="https://buy.stripe.com/00w5kC1Aj55geYA4XX3ks00">Acquista la scheda</a>
   </section>
 
   <footer>
@@ -263,23 +259,5 @@
   </footer>
 </div>
 
-<script>
-  (function () {
-    var btn = document.getElementById('copia');
-    var code = document.getElementById('nota');
-    btn.addEventListener('click', function () {
-      var text = code.textContent;
-      function selectFallback() {
-        var r = document.createRange(); r.selectNodeContents(code);
-        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
-        btn.textContent = 'Selezionato';
-      }
-      try {
-        navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copiato'; }, selectFallback);
-      } catch (e) { selectFallback(); }
-      setTimeout(function () { btn.textContent = 'Copia'; }, 2200);
-    });
-  })();
-</script>
 </body>
 </html>
