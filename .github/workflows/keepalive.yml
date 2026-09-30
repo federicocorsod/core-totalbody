@@ -1,0 +1,12 @@
+# Tiene sveglio il server di consegna su Render (piano free si addormenta dopo 15 min),
+# così l'email con la scheda parte subito dopo ogni pagamento.
+name: Tieni sveglio il server di consegna
+on:
+  schedule:
+    - cron: "*/10 * * * *"
+  workflow_dispatch:
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -fsS -m 90 https://core-totalbody-consegna.onrender.com/ || true
