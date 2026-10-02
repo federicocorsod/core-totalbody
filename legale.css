@@ -35,3 +35,5 @@ p, li { max-width: 65ch; }
 ul { padding-left: 1.2em; }
 li { margin-bottom: 6px; }
 strong { color: var(--ivory); font-weight: 500; }
+.avviso { border: 1px solid var(--gold); padding: 16px 18px; margin: 0 0 8px; background: rgba(200, 165, 96, .07); }
+.avviso p { margin: 0; }
