@@ -7,9 +7,7 @@
 <meta property="og:title" content="Core &amp; Total Body — Federico Corso">
 <meta property="og:description" content="Scheda di allenamento a corpo libero. 19,99 € invece di 50 €.">
 <title>Core &amp; Total Body</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400&family=Jost:wght@300;400;500&display=swap">
+<link rel="stylesheet" href="fonts/fonts.css">
 <style>
   :root {
     color-scheme: dark;
@@ -151,6 +149,13 @@
     font-size: 12px; color: var(--muted); letter-spacing: .04em;
   }
   footer a { color: var(--gold); text-decoration: none; }
+  .legal-note { text-align: center; font-size: 12px; color: var(--muted); margin: 8px 0 0; line-height: 1.5; }
+  .legal-note a, .seller a { color: var(--gold); }
+  .health { margin-top: 40px; font-size: 13px; color: var(--muted); line-height: 1.6; border-top: 1px solid var(--line); padding-top: 18px; }
+  .health strong { color: #c2bbad; font-weight: 500; }
+  .seller { width: 100%; font-size: 12px; line-height: 1.7; color: var(--muted); }
+  .seller strong { color: #c2bbad; font-weight: 500; }
+  .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
   footer a:hover, footer a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
 
   @media (max-width: 420px) {
@@ -192,6 +197,7 @@
       <p class="offer-note">Pagamento unico. Nessun abbonamento. Scheda in PDF via email subito dopo il pagamento.</p>
       <a class="cta" href="https://buy.stripe.com/00w5kC1Aj55geYA4XX3ks00">Acquista ora</a>
       <p class="secure">Pagamento sicuro con Stripe · Carta, Apple Pay, Google Pay</p>
+      <p class="legal-note">Acquistando accetti le <a href="condizioni.html">Condizioni di vendita</a>. Trattandosi di contenuto digitale consegnato subito, al momento del pagamento rinunci al diritto di recesso.</p>
     </div>
   </section>
 
@@ -251,11 +257,19 @@
       <span class="now">19,99<small>€</small></span>
     </div>
     <a class="cta" href="https://buy.stripe.com/00w5kC1Aj55geYA4XX3ks00">Acquista la scheda</a>
+    <p class="legal-note">Acquistando accetti le <a href="condizioni.html">Condizioni di vendita</a> e prendi visione dell'<a href="privacy.html">Informativa privacy</a>.</p>
   </section>
 
+  <p class="health"><strong>Avvertenza sulla salute.</strong> Prima di iniziare questo o qualsiasi altro programma di allenamento consulta il tuo medico, soprattutto in presenza di patologie, infortuni, gravidanza o se non ti alleni da tempo. Esegui gli esercizi secondo le tue capacità e interrompi in caso di dolore, vertigini o malessere. La scheda non sostituisce il parere di un medico o di un professionista sanitario.</p>
+
   <footer>
+    <p class="seller"><strong>Venditore:</strong> Federico Domenico Corso · Via Monte Grappa 21, 20900 Monza (MB), Italia · P.IVA 11572520960 · Email: <a href="mailto:federico.corso.d@gmail.com">federico.corso.d@gmail.com</a></p>
     <span>© Federico Corso</span>
-    <a href="https://www.instagram.com/fede_corsius/" target="_blank" rel="noopener">Instagram @fede_corsius</a>
+    <span class="footer-links">
+      <a href="condizioni.html">Condizioni di vendita</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.instagram.com/fede_corsius/" target="_blank" rel="noopener">Instagram @fede_corsius</a>
+    </span>
   </footer>
 </div>
 
